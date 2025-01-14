@@ -77,3 +77,10 @@ const getParams = (query: string) =>
     return res;
   }, {});
 console.log(getParams("name=hexlet&count=3&order=asc"));
+
+// 11
+namespace Company {
+  export const isEmployeeEmail = (email: string, domain: string) =>
+    email.split("@")[1] === domain;
+}
+console.log(Company.isEmployeeEmail("tirion@hexlet.io", "hexlet.io"));
