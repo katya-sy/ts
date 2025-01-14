@@ -24,3 +24,13 @@ console.log(getHiddenCard("1234567890123456", 3));
 
 // 5
 console.log([1, 2, 3, 4, 5, 6, 7, 8].filter((num) => num % 2 == 0));
+
+// 6
+const filterAnagrams = (word: string, anagramList: string[]) => {
+  const sortedWord = word.split("").sort().join("");
+
+  return anagramList.filter(
+    (item) => item.split("").sort().join("") === sortedWord
+  );
+};
+console.log(filterAnagrams("abba", ["aabb", "abcd", "bbaa", "dada"]));
