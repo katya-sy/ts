@@ -56,3 +56,15 @@ const buildModal = (text: string, status: ModalStatus) => {
   };
 };
 console.log(buildModal("hexlet forever", ModalStatus.Opened));
+
+// 9
+type User = {
+  name: string;
+  age: number;
+};
+const getOlderUser = (user1: User, user2: User) => {
+  if (user1.age === user2.age) return null;
+  else if (user1.age > user2.age) return user1;
+  else return user2;
+};
+console.log(getOlderUser({ name: "Petr", age: 8 }, { name: "Ivan", age: 4 }));
