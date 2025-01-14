@@ -68,3 +68,12 @@ const getOlderUser = (user1: User, user2: User) => {
   else return user2;
 };
 console.log(getOlderUser({ name: "Petr", age: 8 }, { name: "Ivan", age: 4 }));
+
+// 10
+const getParams = (query: string) =>
+  query.split("&").reduce((res: any, cur) => {
+    const [key, value] = cur.split("=");
+    res[key] = value;
+    return res;
+  }, {});
+console.log(getParams("name=hexlet&count=3&order=asc"));
