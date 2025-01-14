@@ -84,3 +84,8 @@ namespace Company {
     email.split("@")[1] === domain;
 }
 console.log(Company.isEmployeeEmail("tirion@hexlet.io", "hexlet.io"));
+
+// 12
+const filter = (numbers: number[], predicate: (num: number) => boolean) =>
+  numbers.filter((num) => predicate(num));
+console.log(filter([1, -5, 2, 3, 4, 133], (n) => n > 3));
