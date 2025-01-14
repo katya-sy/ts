@@ -43,3 +43,16 @@ const course = {
   lessons: ["variables", "functions", "conditions"],
 };
 console.log(isComplete(course));
+
+// 8
+enum ModalStatus {
+  Opened,
+  Closed,
+}
+const buildModal = (text: string, status: ModalStatus) => {
+  return {
+    text,
+    status,
+  };
+};
+console.log(buildModal("hexlet forever", ModalStatus.Opened));
