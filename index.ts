@@ -34,3 +34,12 @@ const filterAnagrams = (word: string, anagramList: string[]) => {
   );
 };
 console.log(filterAnagrams("abba", ["aabb", "abcd", "bbaa", "dada"]));
+
+// 7
+const isComplete = (course: { name: string; lessons: string[] }) =>
+  course.lessons.length >= 4;
+const course = {
+  name: "Java",
+  lessons: ["variables", "functions", "conditions"],
+};
+console.log(isComplete(course));
