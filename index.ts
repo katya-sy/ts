@@ -23,5 +23,4 @@ function getHiddenCard(cardNumber: string, starCount = 4) {
 console.log(getHiddenCard("1234567890123456", 3));
 
 // 5
-const evenNumbers = (num: number) => num % 2 == 0;
-console.log([1, 2, 3, 4, 5, 6, 7, 8].filter(evenNumbers));
+console.log([1, 2, 3, 4, 5, 6, 7, 8].filter((num) => num % 2 == 0));
